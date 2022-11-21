@@ -3,6 +3,102 @@
   padding: 0rem;
 }
 
-.main-header h1 {
-  font-size: 1rem;
+.centered-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-header {
+  max-width: 100%;
+  background: #90d2d8;
+  width: 100%;
+  height: 100rem;
+  -webkit-clip-path: polygon(0% 0%, 250% 0%, 50% 100%, 0% 75%);
+          clip-path: polygon(0% 0%, 250% 0%, 50% 100%, 0% 75%);
+}
+.main-header .triangle {
+  background-color: #3f505a;
+  -webkit-clip-path: polygon(0% 0%, 250% 0%, 50% 100%, 0% 75%);
+          clip-path: polygon(0% 0%, 250% 0%, 50% 100%, 0% 75%);
+  width: 100%;
+  height: 97rem;
+}
+.main-header .triangle .menu {
+  display: flex;
+  justify-content: center;
+  padding: 8rem;
+  align-items: center;
+}
+.main-header .triangle .menu ul {
+  display: flex;
+  list-style: none;
+}
+.main-header .triangle .menu a {
+  text-decoration: none;
+  padding: 0 1.6rem;
+  font-size: 2.9rem;
+  color: #49c9d3;
+}
+.main-header .triangle .menu li a {
+  border-left: 2px solid #49c9d3;
+  padding-left: 5rem;
+  margin-left: 5rem;
+}
+.main-header .triangle .menu li:nth-child(4)::after {
+  content: "";
+  border-left: 2px solid #49c9d3;
+  padding-left: 5rem;
+  margin-left: 5rem;
+  font-size: 2.9rem;
+}
+.main-header .triangle .logo {
+  text-align: center;
+}
+.main-header .triangle .title {
+  text-align: center;
+  font-size: 12rem;
+  color: white;
+}
+.main-header .triangle .title .border {
+  border-bottom: 2px solid white;
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 10rem;
+}
+.main-header .triangle h2 {
+  font-size: 3.7rem;
+  color: #49c9d4;
+  margin-bottom: 2rem;
+}
+.main-header .triangle .content {
+  display: flex;
+  justify-content: center;
+}
+.main-header .triangle .content p {
+  font-size: 2.9rem;
+  color: #49c9d3;
+  margin-bottom: 4rem;
+  line-height: 4rem;
+  width: 80%;
+  text-align: center;
+}
+.main-header .triangle .button {
+  display: flex;
+  justify-content: center;
+}
+.main-header .triangle .button a button {
+  width: 8rem;
+  height: 3rem;
 }/*# sourceMappingURL=style.css.map */
