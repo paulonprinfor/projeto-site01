@@ -1,7 +1,97 @@
 
 .main-header {
+    max-width: 100%;
+    background: #90d2d8;
+    width: 100%;
+    height: 100rem;
+    clip-path: polygon(0% 0%, 250% 0%, 50% 100%, 0% 75%);
+    .triangle {
+        background-color: #3f505a;
+        clip-path: polygon(0% 0%, 250% 0%, 50% 100%, 0% 75%);
+        width: 100%;
+        height: 97rem;
 
-    h1 {
-        font-size: 1rem;
+        .menu {
+            display: flex;
+            justify-content: center;
+            padding: 8rem;
+            align-items: center;
+          
+            ul {
+            display: flex;
+            list-style: none;
+          }
+    
+          a {
+            text-decoration: none; 
+               padding: 0 1.6rem;
+               font-size: 2.9rem;
+               color: $color-menu;
+          }
+    
+          li a {
+            border-left: 2px solid $color-menu;
+            padding-left: 5rem;
+            margin-left: 5rem;
+          }
+    
+          li:nth-child(4)::after {
+            content: "";
+            border-left: 2px solid $color-menu;
+            padding-left: 5rem;
+            margin-left: 5rem;
+            font-size: 2.9rem;
+           
+            }
+        }
+
+
+        .logo {
+            text-align: center;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 12rem;
+            color: $color-title;
+
+            .border {
+                border-bottom: 2px solid $color-title;
+                width: 60%;
+                margin-left: 20%;
+                margin-bottom: 10rem;
+            }
+        }
+
+        h2 {
+            font-size: 3.7rem;
+            color: $color-footer;
+            margin-bottom: 2rem;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            p{
+                font-size: 2.9rem;
+                color: $color-menu;
+                margin-bottom: 4rem;
+                line-height: 4rem;
+                width: 80%;
+                text-align: center;
+            }
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            
+            a { 
+                button {
+                    width: 8rem;
+                    height: 3rem;
+                }
+            }
+        }
     }
 }
